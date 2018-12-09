@@ -33,7 +33,7 @@ for i in range(0,999):
         blank[int(targets[x][0])+1,int(targets[x][1]+1)] = 1 
         blank[int(targets[x][0])+1,int(targets[x][1]-1)] = 1 
     
-    #apply gaussian noise, not limited to a normal RGB grayscale range
+    #apply gaussian noise, not limited to a normal grayscale range
     noise = np.random.normal(128,30,(1000,1000))
     
     complete = blank+noise
